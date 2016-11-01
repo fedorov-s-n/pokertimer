@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.pokertimer;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '343713A54B8251F4F35A4096D721103D';
+var $strongName = '1347B20810211895AA4F49B5AA4AE6B6';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -3651,7 +3651,7 @@ function com_google_gwt_media_client_MediaBase_$getMediaElement__Lcom_google_gwt
 }
 
 function com_google_gwt_media_client_MediaBase_$setSrc__Lcom_google_gwt_media_client_MediaBase_2Ljava_lang_String_2V(this$static){
-  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).src = 'resources/horn.mp3';
+  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).src = 'https://raw.githubusercontent.com/fedorov-s-n/pokertimer/gh-pages/resources/horn.mp3';
 }
 
 com_google_gwt_lang_JavaClassHierarchySetupUtil_defineClass__Lcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2(174, 125, $intern_53);
