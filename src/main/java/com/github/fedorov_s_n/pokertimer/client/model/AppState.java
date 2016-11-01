@@ -116,7 +116,7 @@ public class AppState {
     public AppState() {
         restart();
         if (audio != null) {
-            audio.setSrc("resources/horn.mp3");
+            audio.setSrc("https://raw.githubusercontent.com/fedorov-s-n/pokertimer/gh-pages/resources/horn.mp3");
         }
     }
 }
