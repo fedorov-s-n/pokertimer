@@ -13,7 +13,7 @@
         <gwt.style>DETAILED</gwt.style>
     </properties>
     <name>Online Poker Timer</name>
-    <url>http://maven.apache.org</url>
+    <url>https://fedorov-s-n.github.io/pokertimer/</url>
     <dependencies>
         <dependency>
             <groupId>org.tessell</groupId>
