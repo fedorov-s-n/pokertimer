@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.7.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="pokertimer">
+    <inherits name="com.google.gwt.user.User" />             <!-- standard gwt components -->
+    <inherits name="com.google.gwt.uibinder.UiBinder" />     <!-- uibinder -->
+    <inherits name="com.google.gwt.resources.Resources" />   <!-- Client Bundles -->
+    <inherits name="org.tessell.Tessell" />                  <!-- mvp model -->
+    <inherits name="com.kiouri.sliderbar.SliderBarMVP" />
+    
+    <source path="client">
+        <exclude name="**/Stub*" />
+    </source>
+    <source path="shared" />
+
+    <!-- Inherit the default GWT style sheet. You can change -->
+    <!-- the theme of your GWT application by uncommenting -->
+    <!-- any one of the following lines. -->
+    <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+    <!-- <inherits name="com.google.gwt.user.theme.chrome.Chrome"/> -->
+    <!-- <inherits name="com.google.gwt.user.theme.dark.Dark"/> -->
+    <!--<inherits name="org.bindgen.Bindgen" />                   for Binding/AbstractBinding  -->
+    <!--<inherits name="com.google.gwt.junit.JUnit"/>-->
+  
+    <entry-point class="com.github.fedorov_s_n.pokertimer.client.MainEntryPoint"/>
+</module>

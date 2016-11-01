@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field="bs" type="com.github.fedorov_s_n.pokertimer.client.resources.BaseStyle" />
+    <gwt:HTMLPanel ui:field="panel">
+        <section class="{bs.mstime}">
+            <div>
+                <span ui:field="remaining"/>
+            </div>
+        </section>
+        <section class="{bs.msslider}">
+            <div align="center">
+                <div ui:field="slider" />
+            </div>
+        </section>
+        <section class="{bs.msbuttons}">
+            <div>
+                <span>
+                    <gwt:Button styleName="{bs.msbutton}" ui:field="buttonToggle"/>
+                </span>
+                <span>
+                    <gwt:Button ui:field="buttonReset" styleName="{bs.msbutton}">&#x27F3;</gwt:Button>
+                </span>
+            </div>
+        </section>
+        <section class="{bs.msblinds}">
+            <div ui:field="blinds"/>
+        </section>
+    </gwt:HTMLPanel>
+</ui:UiBinder>

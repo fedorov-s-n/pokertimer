@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field="bs" type="com.github.fedorov_s_n.pokertimer.client.resources.BaseStyle" />
+    <gwt:HTMLPanel ui:field="tr">
+        <table>
+            <tr>
+                <td class="fcell">
+                    <span ui:field="active"/>
+                </td>
+                <td class="cell">
+                    <span ui:field="small"/>
+                </td>
+                <td class="cell">
+                    <span ui:field="big"/>
+                </td>
+                <td class="cell">
+                    <span ui:field="ante"/>
+                </td>
+                <td class="cell">
+                    <span ui:field="time"/>
+                </td>
+                <td class="bcell">
+                    <span>
+                        <gwt:Button ui:field="buttonRun" styleName="{bs.button}">
+                        &#x23F5;
+                        </gwt:Button>
+                    </span>
+                </td>
+                <td class="bcell">
+                    <span>
+                        <gwt:Button ui:field="buttonRemove" styleName="{bs.button}">
+                        &#x2718;
+                        </gwt:Button>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </gwt:HTMLPanel>
+</ui:UiBinder>
