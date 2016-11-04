@@ -6,6 +6,10 @@ import com.github.fedorov_s_n.pokertimer.client.model.AppState;
 import com.github.fedorov_s_n.pokertimer.client.model.TimeFormatter;
 import com.github.fedorov_s_n.pokertimer.client.views.AppViews;
 import com.github.fedorov_s_n.pokertimer.client.views.IsMainPanelView;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyDownEvent;
+import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.user.client.ui.RootPanel;
 import org.tessell.presenter.BasicPresenter;
 import static org.tessell.model.dsl.TakesValues.*;
 
@@ -45,5 +49,15 @@ public class MainPanelPresenter extends BasicPresenter<IsMainPanelView> {
                 slider.setMaxValue(state.timeTotal.getValue());
             }
         });
+        RootPanel.get().addDomHandler(new KeyDownHandler() {
+            @Override
+            public void onKeyDown(KeyDownEvent event) {
+                if (event.getNativeKeyCode() == KeyCodes.KEY_SPACE) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                    state.toggleTimer();
+                }
+            }
+        }, KeyDownEvent.getType());
     }
 }
