@@ -52,6 +52,7 @@ table {
     vertical-align: middle;
     font-weight:bold;
     text-decoration:none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .mstime,.msslider,.msblinds,.msbutton,.msbuttons {
